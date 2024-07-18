@@ -35,7 +35,16 @@
 
     // to alt a funtion or the code use die() or exit()
 
-    die(var_dump($person));
+    //die(var_dump($person));
+
+    // task 
+
+    $task = [
+        'title' => 'HOME WORK',
+        'due' => 'NOW',
+        'complete' => true,
+        'assigned_to' => 'samuel effiong'
+    ];
 
     require 'index.view.php';
 ?>

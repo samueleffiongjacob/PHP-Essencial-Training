@@ -28,7 +28,27 @@
             <?php foreach ($person as $key => $feature) : ?>
               <li><strong><?= $key; ?></strong> <?= $feature; ?></li>
             <?php endforeach; ?>
+
+            <?php foreach ($task as $key => $feature) : ?>
+              <li><strong><?= $key; ?></strong> <?= $feature; ?></li>
+            <?php endforeach; ?>
+
+            <!-- To capitalize each latters -->
+
+            <?= ucwords('hello my name is samuel')?>
           </ul>
+
+          <!-- new way to contol assosiate array -->
+
+          <ul  class='ne'>
+            <li><strong>Name : </strong></li> <?= $task['title']; ?>
+            <li><strong>Due Date : </strong></li> <?= $task['due']; ?>
+            <li><strong>Personal Responsible : </strong></li> <?= $task['assigned_to']; ?>
+            <li><strong>Status : </strong></li> <?= $task['completed'] ? 'completed' : 'incomplete'; ?>
+            
+          </ul>
+
+          
         </header> 
     </div>
     
