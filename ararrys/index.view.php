@@ -77,6 +77,18 @@
                 <?php endif; ?>
               </li>
           </ul>
+                  <!-- function rendering in php -->
+          <ul class='ne3'> 
+            <li>
+                <?php echo php('hello', 'cock', 'mtt'); ?>
+            </li>
+          </ul>
+
+          <ul class='ne4'>
+              <li>
+                    <?php  echo checkAge(17); ?>
+              </li>
+          </ul>
         </header> 
     </div>
     

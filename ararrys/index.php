@@ -48,7 +48,7 @@
 
     $sax = [
         'title' => 'HOME WORK',
-        'due' => 'today',
+        'due' => 'today', 
         'assigned_to' => 'samuel effiong',
         'complete' => true
         
@@ -64,7 +64,27 @@
     ];
 
     //  function 
+    // function php1($sam, $hfh, $hhh){
+    //     var_dump($sam, $hfh,$hhh);
+    // }
 
-    
+    function php($sam, $hfh, $hhh){
+        return '$sam, $hfh,$hhh';
+    }
+
+
+    // writting a function that checks if a person is old enough to enter a club
+    function checkAge($age){
+        if ($age >= 18){
+            return 'Welcome';
+        }else {
+            return 'Sorry, you are too young';
+        }
+    }
+
+     
+
+   
+
     require 'index.view.php';
 ?>
