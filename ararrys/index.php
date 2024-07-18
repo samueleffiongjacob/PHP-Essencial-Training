@@ -40,11 +40,31 @@
     // task 
 
     $task = [
-        'title' => 'HOME WORK',
-        'due' => 'NOW',
-        'complete' => true,
+        'title' => 'Finish WORK',
+        'due' => 'today',
+        'complete' => false,
         'assigned_to' => 'samuel effiong'
     ];
 
+    $sax = [
+        'title' => 'HOME WORK',
+        'due' => 'today',
+        'assigned_to' => 'samuel effiong',
+        'complete' => true
+        
+    ];
+
+
+    $me = [
+        'title' => 'HOME WORK',
+        'due' => 'today',
+        'assigned_to' => 'samuel effiong',
+        'complete' => true
+        
+    ];
+
+    //  function 
+
+    
     require 'index.view.php';
 ?>

@@ -44,11 +44,39 @@
             <li><strong>Name : </strong></li> <?= $task['title']; ?>
             <li><strong>Due Date : </strong></li> <?= $task['due']; ?>
             <li><strong>Personal Responsible : </strong></li> <?= $task['assigned_to']; ?>
-            <li><strong>Status : </strong></li> <?= $task['completed'] ? 'completed' : 'incomplete'; ?>
-            
+
+            <!-- conditionals using tenery operators -->
+            <li><strong>Status : </strong></li> <?= $task['complete'] ? 'completed' : 'incomplete'; ?>           
           </ul>
 
-          
+          <ul class='ne1'>
+             <!-- conditionals  -->
+              <li><strong>Name : </strong></li> <?= $sax['title']; ?>
+              <li><strong>Due Date : </strong></li> <?= $sax['due']; ?>
+              <li><strong>Personal Responsible : </strong></li> <?= $sax['assigned_to']; ?>
+              <li>
+                <?php
+                  if($sax['complete']){
+                    echo '&#9989';
+                  }else {
+                    echo 'incomplete';
+                  }
+                ?>
+              </li>
+          </ul>
+
+          <ul class='ne2'>
+              <li><strong>Name : </strong></li> <?= $me['title']; ?>
+              <li><strong>Due Date : </strong></li> <?= $me['due']; ?>
+              <li><strong>Personal Responsible : </strong></li> <?= $me['assigned_to']; ?>
+              <li> 
+                <?php if ($me ['complete']) : ?>
+                  <span class="icon"> &#9989</span>
+                <?php else  : ?>
+                  <span class="icon">  incomplete </span>
+                <?php endif; ?>
+              </li>
+          </ul>
         </header> 
     </div>
     
