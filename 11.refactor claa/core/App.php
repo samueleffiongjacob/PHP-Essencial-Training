@@ -3,11 +3,11 @@
 class App 
 
 {
- 
+    // dependency injection conterinair
     protected static $registry = [];
 
 
-    public static function blind($key, $value)
+    public static function bind($key, $value)
 
     {
         static :: $registry[$key] = $value;

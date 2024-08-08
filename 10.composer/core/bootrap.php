@@ -1,5 +1,11 @@
 <?php
 
+use Dotenv\Dotenv;
+
+require 'vendor/autoload.php';
+
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
 
 $app = [];
 
@@ -14,9 +20,3 @@ try{
     die('Bootstrap error: ' . $e->getMessage());
 } 
 
-// App::bind('config', require 'config.php');
-
-
-// App::blind('database', new QueryBuilder (
-//     Connection::make(App::get['config'][database])
-// ));

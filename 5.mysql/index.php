@@ -14,7 +14,7 @@
 
 // connecting to database
 try {
-    $pdo = new PDO('mysql:host=127.0.0.1; dbname=EFFIONG', 'root', 'FGCIcisco15$'); 
+    $pdo = new PDO('mysql:host=127.0.0.1; dbname=EFFIONG', 'root', ''); 
 } catch (PDOException $e){
     die('could not connect'. $e->getMessage());
 }

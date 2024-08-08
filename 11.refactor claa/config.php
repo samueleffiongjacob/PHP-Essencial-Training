@@ -2,13 +2,13 @@
 
 return [
     'database' => [
-        'name' => 'EFFIONG',
-        'username'=>'root',
-        'password' => 'FGCIcisco15$',
-        'connection' => 'mysql:host=127.0.0.1',
+        'name' => $_ENV['DB_NAME'],
+        'username' => $_ENV['DB_USERNAME'],
+        'password' => $_ENV['DB_PASSWORD'],
+        'connection' => $_ENV['DB_CONNECTION'] . ':host=' . $_ENV['DB_HOST'],
         'options' => [
-            PDO::ATTR_ERRMODE => PDO :: ERRMODE_EXCEPTION, // Use ERRMODE_EXCEPTION for better error handling
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ //// Fetch data as objects by default
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
         ]
     ]
 ];
