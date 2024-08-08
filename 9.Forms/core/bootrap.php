@@ -23,3 +23,10 @@ try{
 } catch (Exception $e) {
     die('Bootstrap error: ' . $e->getMessage());
 } 
+
+// App::bind('config', require 'config.php');
+
+
+// App::blind('database', new QueryBuilder (
+//     Connection::make(App::get['config'][database])
+// ));
