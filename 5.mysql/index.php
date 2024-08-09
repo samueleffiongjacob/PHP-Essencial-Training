@@ -6,11 +6,7 @@
      */
 
 
-// try {
-//     $pdo = new PDO('mysql:host=127.0.0.1; dbname=SAMUEL', 'root', 'FGCIcisco15$'); 
-// } catch (PDOException $e){
-//     die('could not connect');
-// }
+
 
 // connecting to database
 try {

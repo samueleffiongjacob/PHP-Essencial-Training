@@ -29,9 +29,9 @@ class Task{
 };
 
 
-// $task = new Task('go to the store');
+$task = new Task('go to the store');
 
-// $task->complete();
+$task->complete();
 
 // var_dump($task->isComplete());
 
